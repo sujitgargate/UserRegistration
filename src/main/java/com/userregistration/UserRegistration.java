@@ -30,4 +30,11 @@ public class UserRegistration {
         String pattern = "^[0-9]{1,2}[ ][0-9]{10}$";
         return (userPhoneNumber.matches(pattern));
     }
+
+    //This method is for checking Valid Password
+    public boolean checkUserPassword(String userPassword) {
+
+        String pattern = "[0-9a-zA-Z]{8,}";
+        return (userPassword.matches(pattern));
+    }
 }

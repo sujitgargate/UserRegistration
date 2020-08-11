@@ -41,4 +41,12 @@ public class UserRegistrationTest {
         String userPhoneNumber = "11 1234567890";
         Assert.assertTrue("Invalid Phone Number", userregistration.checkUserPhoneNumber(userPhoneNumber));
     }
+
+    //This case is for checking Password Entered
+    @Test
+    public void emteredPassword_ShouLd_Return_True() {
+
+        String userPassword = "SUJIT1234";
+        Assert.assertTrue("Invalid Password", userregistration.checkUserPassword(userPassword));
+    }
 }
