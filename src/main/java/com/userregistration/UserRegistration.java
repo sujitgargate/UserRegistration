@@ -23,4 +23,9 @@ public class UserRegistration {
         String pattern = "^[a-zA-Z]+([._+-][a-zA-Z]+)*[@][A-Za-z]+[.][a-zA-Z]+([.][a-zA-Z]{2})*$";
         return (userEmail.matches(pattern));
     }
+
+    public boolean checkUserPhoneNumber(String userPhoneNumber) {
+        String pattern = "^[0-9]{1,2}[ ][0-9]{10}$";
+        return (userPhoneNumber.matches(pattern));
+    }
 }
