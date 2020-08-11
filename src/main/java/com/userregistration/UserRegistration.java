@@ -26,6 +26,7 @@ public class UserRegistration {
 
     //This method is for checking Valid Phone Number
     public boolean checkUserPhoneNumber(String userPhoneNumber) {
+
         String pattern = "^[0-9]{1,2}[ ][0-9]{10}$";
         return (userPhoneNumber.matches(pattern));
     }
