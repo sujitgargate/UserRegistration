@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class UserRegistrationTest {
 
+    Scanner sc = new Scanner(System.in);
     UserRegistration userregistration = new UserRegistration();
 
     //This case is for checking Valid first name
@@ -23,5 +24,11 @@ public class UserRegistrationTest {
 
         String lastName = "Gargate";
         Assert.assertTrue("InValid LastName", userregistration.checkLastName(lastName));
+    }
+
+    @Test
+    public void enteredEmail_should_Return_true() {
+        String userEmail = "sujit@gmail.co.in";
+        Assert.assertTrue("Invalid Email", userregistration.checkUserEmail(userEmail));
     }
 }

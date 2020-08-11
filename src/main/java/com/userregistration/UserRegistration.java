@@ -16,4 +16,11 @@ public class UserRegistration {
 
         return(lastName.matches("[A-Z][a-z]{3,}"));
     }
+
+    //
+    public boolean checkUserEmail(String userEmail) {
+
+        String pattern = "^[a-zA-Z]+([._+-][a-zA-Z]+)*[@][A-Za-z]+[.][a-zA-Z]+([.][a-zA-Z]{2})*$";
+        return (userEmail.matches(pattern));
+    }
 }
