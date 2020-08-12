@@ -34,7 +34,7 @@ public class UserRegistration {
     //This method is for checking Valid Password
     public boolean checkUserPassword(String userPassword) {
 
-        String pattern = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$";
+        String pattern = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[*.!@#$%^&(){}:'<>,.?/~`_+-=|].).{8,}$";
         return (userPassword.matches(pattern));
     }
 }
