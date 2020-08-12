@@ -30,7 +30,7 @@ public class UserRegistrationTest {
     @Test
     public void enteredEmail_should_Return_true() {
 
-        String userEmail = "sujit@gmail.co.in";
+        String userEmail = "su11t.0100@gmail.jj";
         Assert.assertTrue("Invalid Email", userregistration.checkUserEmail(userEmail));
     }
 

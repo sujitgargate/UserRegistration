@@ -20,7 +20,7 @@ public class UserRegistration {
     //This method is for checking Valid Email Address
     public boolean checkUserEmail(String userEmail) {
 
-        String pattern = "^[a-zA-Z]+([._+-][a-zA-Z]+)*[@][A-Za-z]+[.][a-zA-Z]+([.][a-zA-Z]{2})*$";
+        String pattern = "^[0-9a-zA-Z]+([._+-][0-9a-zA-Z]+)*[@][0-9A-Za-z]+[.][a-zA-Z]{2,4}([.][a-zA-Z]{2,4})*$";
         return (userEmail.matches(pattern));
     }
 
