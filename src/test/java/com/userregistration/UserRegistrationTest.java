@@ -46,7 +46,7 @@ public class UserRegistrationTest {
     @Test
     public void emteredPassword_ShouLd_Return_True() {
 
-        String userPassword = "Sujitgarga";
+        String userPassword = "Sujitgarga12";
         Assert.assertTrue("Invalid Password", userregistration.checkUserPassword(userPassword));
     }
 }
